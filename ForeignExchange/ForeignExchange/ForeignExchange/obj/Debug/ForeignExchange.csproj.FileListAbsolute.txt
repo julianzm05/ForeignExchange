@@ -1,0 +1,15 @@
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\ForeignExchange.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\ForeignExchange.pdb
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Core.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Core.xml
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.csprojResolveAssemblyReference.cache
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.App.xaml.g.cs
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.Views.MainView.xaml.g.cs
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.pdb

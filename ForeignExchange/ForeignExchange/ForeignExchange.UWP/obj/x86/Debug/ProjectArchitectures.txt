@@ -1,0 +1,2 @@
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.UWP\ForeignExchange.UWP.csproj;x86
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.csproj;neutral
