@@ -4,9 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ForeignExchange.Views.MainView"
     BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                   iOS="20,30,20,10"
+                   Android="10"/>
+    </ContentPage.Padding>
     <ContentPage.Content>
-        <StackLayout 
-            Padding="20,30,20,10">
+        <StackLayout>
             <Label 
                 Text="Foreign Exchange"
                 HorizontalOptions="Center"
@@ -17,14 +21,14 @@
                 Text="Amount:">
             </Label>
             <Entry
-                Text="{Binding amount, Mode=TwoWay}"
+                Text="{Binding Amount, Mode=TwoWay}"
                 Placeholder="Enter the amount convert...">
             </Entry>
             <Label
                 Text="Source rate">
             </Label>
             <Picker
-                ItemsSource="{Binding rates}"
+                ItemsSource="{Binding Rates}"
                 ItemDisplayBinding="{Binding Name}"
                 SelectedItem="{Binding SourceRate, Mode=TwoWay}"
                 Title="Select a source rate...">
@@ -33,7 +37,7 @@
                 Text="Target rate">
             </Label>
             <Picker
-                ItemsSource="{Binding rates}"
+                ItemsSource="{Binding Rates}"
                 ItemDisplayBinding="{Binding Name}"
                 SelectedItem="{Binding TargetRate, Mode=TwoWay}"
                 Title="Select a target rate...">
@@ -48,7 +52,7 @@
                 FontAttributes="Bold"
                 BorderRadius="25"
                 HeightRequest="50"
-                Command="{Binding CovertCommand}"
+                Command="{Binding ConvertCommand}"
                 IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
             </Button>
             <Label
