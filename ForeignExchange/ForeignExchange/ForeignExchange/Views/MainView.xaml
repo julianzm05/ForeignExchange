@@ -2,6 +2,7 @@
 <ContentPage    
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:i18n="clr-namespace:ForeignExchange.Helpers"
     x:Class="ForeignExchange.Views.MainView"
     BindingContext="{Binding Main, Source={StaticResource Locator}}">
     <ContentPage.Padding>
@@ -12,41 +13,82 @@
     <ContentPage.Content>
         <StackLayout>
             <Label 
-                Text="Foreign Exchange"
+                Text="{i18n:Translate Title}" 
                 HorizontalOptions="Center"
                 FontSize="Large"
-                FontAttributes="Bold">
+                FontAttributes="Bold"
+                Margin="10">
             </Label>
-            <Label
-                Text="Amount:">
-            </Label>
-            <Entry
-                Text="{Binding Amount, Mode=TwoWay}"
-                Placeholder="Enter the amount convert...">
-            </Entry>
-            <Label
-                Text="Source rate">
-            </Label>
-            <Picker
-                ItemsSource="{Binding Rates}"
-                ItemDisplayBinding="{Binding Name}"
-                SelectedItem="{Binding SourceRate, Mode=TwoWay}"
-                Title="Select a source rate...">
-            </Picker>
-            <Label
-                Text="Target rate">
-            </Label>
-            <Picker
-                ItemsSource="{Binding Rates}"
-                ItemDisplayBinding="{Binding Name}"
-                SelectedItem="{Binding TargetRate, Mode=TwoWay}"
-                Title="Select a target rate...">
-            </Picker>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".5*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width=".5*" />
+                </Grid.ColumnDefinitions>
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="{i18n:Translate AmountLabel}">
+                </Label>
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding Amount, Mode=TwoWay}"
+                    Placeholder="{i18n:Translate AmountPlaceHolder}">
+                </Entry>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    Text="{i18n:Translate SourceRateLabel}">
+                </Label>
+                <Picker
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    ItemsSource="{Binding Rates}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SourceRate, Mode=TwoWay}"
+                    Title="{i18n:Translate SourceRateTitle}">
+                </Picker>
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    Text="{i18n:Translate TargetRateLabel}">
+                </Label>
+                <Picker
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    ItemsSource="{Binding Rates}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding TargetRate, Mode=TwoWay}"
+                    Title="{i18n:Translate TargetRateTitle}">
+                </Picker>
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Grid.RowSpan="2"
+                    HeightRequest="40"
+                    WidthRequest="40"
+                    Source="ic_switch.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SwitchCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
             <ActivityIndicator
                 IsRunning="{Binding IsRunning, Mode=TwoWay}">
             </ActivityIndicator>
             <Button
-                Text="Convert"
+                Text="{i18n:Translate Convert}"
                 BackgroundColor="Navy"
                 TextColor="White"
                 FontAttributes="Bold"

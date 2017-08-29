@@ -11,6 +11,7 @@ namespace ForeignExchange.ViewModels
     using Newtonsoft.Json;
     using System.Collections.Generic;
     using Xamarin.Forms;
+    using Helpers;
 
     public class MainViewModel : INotifyPropertyChanged
     {
@@ -21,6 +22,8 @@ namespace ForeignExchange.ViewModels
         bool _isRunning;
         string _result;
         bool _isEnabled;
+        Rate _sourceRate;
+        Rate _targetRate;
         ObservableCollection<Rate> _rates;
         #endregion
         #region Properties
@@ -40,8 +43,36 @@ namespace ForeignExchange.ViewModels
                 }
             }
         }
-        public Rate SourceRate { get; set; }
-        public Rate TargetRate { get; set; }
+        public Rate SourceRate
+        {
+            get
+            {
+                return _sourceRate;
+            }
+            set
+            {
+                if (_sourceRate != value)
+                {
+                    _sourceRate = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SourceRate)));
+                }
+            }
+        }
+        public Rate TargetRate
+        {
+            get
+            {
+                return _targetRate;
+            }
+            set
+            {
+                if (_targetRate != value)
+                {
+                    _targetRate = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TargetRate)));
+                }
+            }
+        }
         public bool IsRunning
         {
             get
@@ -106,34 +137,48 @@ namespace ForeignExchange.ViewModels
         {
             if(string.IsNullOrEmpty(Amount))
             {
-                await Application.Current.MainPage.DisplayAlert("Error","You must enter a value in amount","Accept");
+                await Application.Current.MainPage.DisplayAlert(Lenguages.Error, Lenguages.AmountValidation, Lenguages.Accept);
                 return;
             }
             decimal amount = 0;
             if(!decimal.TryParse(Amount, out amount))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "You must enter a numeric value in amount", "Accept");
+                await Application.Current.MainPage.DisplayAlert(Lenguages.Error, Lenguages.AmountNumericValidation, Lenguages.Accept);
                 return;
             }
             if(SourceRate == null)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "You must select a source rate", "Accept");
+                await Application.Current.MainPage.DisplayAlert(Lenguages.Error, Lenguages.SourceRateValidation, Lenguages.Accept);
                 return;
             }
             if (TargetRate == null)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "You must select a target rate", "Accept");
+                await Application.Current.MainPage.DisplayAlert(Lenguages.Error, Lenguages.TargetRateValidation, Lenguages.Accept);
                 return;
             }
             decimal amountConverted = amount/(decimal)SourceRate.TaxRate*(decimal)TargetRate.TaxRate;
             Result = string.Format("{0} {1:C2} ={2} {3:C2}", SourceRate.Code, amount, TargetRate.Code,amountConverted);
+        }
+        public ICommand SwitchCommand
+        {
+            get
+            {
+                return new RelayCommand(Switch);
+            }
+        }
+        void Switch()
+        {
+            var aux = SourceRate;
+            SourceRate = TargetRate;
+            TargetRate = aux;
+            Convert();
         }
         #endregion
         #region Methods
         async void LoadRate()
         {
             IsRunning = true;
-            Result = "Loading rate...";
+            Result = Lenguages.Loading;
             try
             {
                 var client = new HttpClient();
@@ -149,7 +194,7 @@ namespace ForeignExchange.ViewModels
                 var rates = JsonConvert.DeserializeObject<List<Rate>>(result);
                 Rates = new ObservableCollection<Rate>(rates);
                 IsRunning = false;
-                Result = "Ready to convert";
+                Result = Lenguages.Ready;
                 IsEnabled = true;
             }
             catch (Exception ex)

@@ -32,3 +32,14 @@ D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\System.Net.Http.Extensions.xml
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\System.Net.Http.Primitives.xml
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.csproj.App.config
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\pt\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\fr\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\bin\Debug\es\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.Resources.Resource.resources
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.Resources.Resource.pt.resources
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.Resources.Resource.fr.resources
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.Resources.Resource.es.resources
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\ForeignExchange.csproj.GenerateResource.Cache
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\pt\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\fr\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange\obj\Debug\es\ForeignExchange.resources.dll

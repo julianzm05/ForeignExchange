@@ -57,3 +57,10 @@ D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.And
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\bin\Debug\ForeignExchange.dll.config
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\bin\Debug\Newtonsoft.Json.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\bin\Debug\Newtonsoft.Json.xml
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\res\drawable\ic_switch.png
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\res\drawable-hdpi\ic_switch.png
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\res\drawable-xhdpi\ic_switch.png
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\res\drawable-xxhdpi\ic_switch.png
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\bin\Debug\es\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\bin\Debug\fr\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\bin\Debug\pt\ForeignExchange.resources.dll

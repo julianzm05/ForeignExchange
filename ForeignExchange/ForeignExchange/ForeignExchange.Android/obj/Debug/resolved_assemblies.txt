@@ -29,6 +29,8 @@ D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.And
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Net.Http.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Collections.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Globalization.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.ComponentModel.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Threading.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\GalaSoft.MvvmLight.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Linq.Expressions.dll
@@ -38,7 +40,6 @@ D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.And
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.IO.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Xml.XDocument.dll
-D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Globalization.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
@@ -50,7 +51,9 @@ D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.And
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\Mono.CSharp.dll
-D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.ComponentModel.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Collections.Concurrent.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\android\assets\Mono.Security.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\linksrc\es\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\linksrc\fr\ForeignExchange.resources.dll
+D:\Proyectos\ForeignExchange\ForeignExchange\ForeignExchange\ForeignExchange.Android\obj\Debug\linksrc\pt\ForeignExchange.resources.dll
